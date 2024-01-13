@@ -2,12 +2,13 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
     padding: 0px;
+    background-color: #EEEEEE;
 }
 
 header {
     padding: 20px;
     text-align: center;
-    background-color: #674747;
+    background-color: #EEEEEE;
 }
 
 header img {
@@ -15,11 +16,12 @@ header img {
     width: 125px;
     height: 125px;
     padding-top: 20px;
+    margin-left: 40px;
 
 }
 
 header h1 {
-    color: white;
+    color: #674747;
     font-size: 50px;
     padding-top: 10px;
     margin-right: 100px;
@@ -28,13 +30,13 @@ header h1 {
 nav {
     text-align: center;
     padding: 20px;
-    background-color: #674747;
+    background-color: #EEEEEE;
 }
 
 nav a {
     padding: 10px;
     font-size: 20px;
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -42,16 +44,51 @@ nav a:hover {
     text-decoration: underline;
 }
 
-section {
+.front-image {
+    display: flex;
+    justify-content: right;
+    align-items: center;
     background-color: #EEEEEE;
     height: 500px;
     margin: 0px;
     padding: 0px;
+    background-image: url('images/frontpage1.jpg');
+    background-position: center;
+}
+
+.opening {
+    background-color: black;
+    opacity: 0.6;
+    width: 400px;
+    height: 400px;
+    margin-right: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.opening h2 {
+    color: #F96666;
+    font-size: 42px;
+}
+.opening p {
+    color: #F96666;
+    font-size: 20px;
+}
+
+.front-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.front-box > article {
+    padding: 20px;
 }
 
 footer {
-    background-color: #674747;
-    color: white;
+    background-color: #EEEEEE;
+    color: black;
     padding: 50px;
     margin: 0px;
     text-align: left;
@@ -64,14 +101,18 @@ footer div {
 }
 
 footer a {
-    color: #EEEEEE;
+    color: black;
+}
+
+footer h3 {
+    color: #F96666;
 }
 
 .button {
     margin-top: 15px;
-    background-color: red;
+    background-color: #F96666;
     border: none;
-    color: white;
+    color: #EEEEEE;
     padding: 15px 30px;
     text-align: center;
     text-decoration: none;
