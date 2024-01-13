@@ -1,8 +1,17 @@
-body {
+
+body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
     padding: 0px;
     background-color: #EEEEEE;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 400;
 }
 
 header {
