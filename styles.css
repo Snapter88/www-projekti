@@ -1,171 +1,174 @@
-
-body{
-    font-family: system-ui, Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0px;
-    padding: 0px;
-    background-color: #EEEEEE;
+/* Bodyn ja otsikoiden fonttien määritttelyä */
+body {
+  font-family: system-ui, Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: #eeeeee;
 }
 
-h1 {font-size: 4rem; font-weight: 800;}
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
 
-h2 {font-size: 3.25rem; font-weight: 400;}
+h2 {
+  font-size: 3.25rem;
+  font-weight: 400;
+}
 
-h3 {font-size: 2rem;}
+h3 {
+  font-size: 2rem;
+}
 
-.top-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+/*  */
+.header-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 header {
-    padding-top: 0px;
-    background-color: #EEEEEE;
+  padding-top: 0px;
+  background-color: #eeeeee;
 }
 
 header img {
-    width: 350px;
-    margin-left: 40px;
-    padding-bottom: 0;
+  width: 350px;
+  margin-left: 40px;
+  padding-bottom: 0;
 }
 
 nav {
-    background-color: #EEEEEE;
-    margin-top: 70px;
-    margin-right: 30px;
+  background-color: #eeeeee;
+  margin-top: 70px;
+  margin-right: 30px;
 }
 
 nav a {
-    padding: 10px;
-    font-size: 20px;
-    color: black;
-    text-decoration: none;
-    border-right: 1px solid #829460;
-
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  border-right: 1px solid #829460;
 }
 
 nav a:last-child {
-    border-right: none;
+  border-right: none;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
+/* Sisältö alkaa */
+
+/* Sivun bannerikuva */
 .front-image {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    background-color: #EEEEEE;
-    height: 500px;
-    margin: 0px;
-    padding: 0px;
-    background-image: url('images/frontpage1.jpg');
-    background-position: center;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 500px;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("images/frontpage1.jpg");
+  background-position: center;
 }
+
 
 .opening {
-    background-color: black;
-    opacity: 0.6;
-    width: 400px;
-    height: 400px;
-    margin-right: 100px;
-    text-align: center;
-    font-weight: bold;
+  background-color: black;
+  opacity: 0.6;
+  width: 400px;
+  height: 400px;
+  margin-right: 100px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .opening h2 {
-    color: #F96666;
-
+  color: #f96666;
 }
 .opening p {
-    color: #F96666;
-    font-size: 20px;
+  color: #f96666;
+  font-size: 20px;
 }
 
-.front-box {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-    text-align: center;
-
+.section-flex {
+  display: flex;
+  padding: 10px;
+  text-align: center;
 }
 
-.front-box article {
-    padding: 20px;
-    margin: 20px;
-    flex: 25%;
+.section-flex article {
+  padding: 20px;
+  margin: 20px;
 }
 
 article h2 {
-    color: #F96666;
+  color: #f96666;
 }
 
+/* Footer osio alkaa */
+
 footer {
-    background-color: #EEEEEE;
-    color: black;
-    padding: 50px;
-    margin: 0px;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
+  background-color: #eeeeee;
+  color: black;
+  padding: 50px;
+  margin: 0px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer div {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 footer a {
-    color: black;
+  color: black;
 }
 
 footer h3 {
-    color: #F96666;
+  color: #f96666;
 }
 
 .button {
-    margin-top: 35px;
-    background-color: #F96666;
-    border: none;
-    color: #EEEEEE;
-    padding: 15px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-
+  margin-top: 35px;
+  background-color: #f96666;
+  border: none;
+  color: #eeeeee;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
 }
 
-
+/* Tapahtuu kun ruutu pienenee */
 
 @media only screen and (max-width: 700px) {
-    .top-bar {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    nav {
-        padding-bottom: 30px;
-        margin-top: 0px;
-    }
-    header img {
-        margin-left: 0;
-    }
-    footer {
-        flex-direction: column;
-    }
-    .front-image {
-        justify-content: center;
-    }
-    .opening {
-        margin-right: 0px;
-    }
-    .front-box {
-        flex-direction: column;
-    }
+  .header-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    padding-bottom: 30px;
+    margin-top: 0px;
+  }
+  header img {
+    margin-left: 0;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .front-image {
+    justify-content: center;
+  }
+  .opening {
+    margin-right: 0px;
+  }
+  .section-flex {
+    flex-direction: column;
+  }
 }
-
-
-
