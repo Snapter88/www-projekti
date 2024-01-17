@@ -147,6 +147,26 @@ footer h3 {
   background-color: #f95666;
 }
 
+/* Gridit menua varten */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-row: auto;
+  gap: 5px;
+  background-color: #d8d8d8;
+  color: black;
+  padding: 5px;
+}
+
+.grid-container > div {
+
+  background-color: #EEEEEE;
+  text-align: center;
+  padding: 10px;
+  
+}
+
 /* Tapahtuu kun ruutu pienenee */
 
 @media only screen and (max-width: 700px) {
