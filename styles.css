@@ -105,7 +105,7 @@ nav a:hover {
 }
 
 article h2 {
-  color: #f96666;
+  color: #B7343A;
 }
 
 /* Footer osio alkaa */
@@ -129,12 +129,12 @@ footer a {
 }
 
 footer h3 {
-  color: #f96666;
+  color: #B7343A;
 }
 
 .button {
   margin-top: 35px;
-  background-color: #f96666;
+  background-color: #B7343A;
   border: none;
   color: #eeeeee;
   padding: 15px 30px;
@@ -144,7 +144,7 @@ footer h3 {
   cursor: pointer;
 }
 .button:hover {
-  background-color: #f95666;
+  background-color: #B7343A;
 }
 
 /* Gridit menua varten */
@@ -166,6 +166,20 @@ footer h3 {
   padding: 10px;
   
 }
+
+.section-flexmenu {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.menu-header{
+  color: #B7343A;
+  text-align: center;
+  font-weight: bold;
+}
+
 
 /* Tapahtuu kun ruutu pienenee */
 
