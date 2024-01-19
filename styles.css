@@ -143,6 +143,8 @@ footer h3 {
   display: inline-block;
   cursor: pointer;
 }
+
+/* Buttonien väri kun kursorin vie päälle*/
 .button:hover {
   background-color: #B7143A;
 }
@@ -208,4 +210,20 @@ footer h3 {
   .section-flex {
     flex-direction: column;
   }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-row: auto;
+    gap: 0px;
+    background-color: #d8d8d8;
+    color: black;
+    padding: 0px;
+  }
+  .section-flexmenu {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    justify-content: center;
+  }
+  
 }
