@@ -3,7 +3,7 @@ body {
   font-family: system-ui, Verdana, Geneva, Tahoma, sans-serif;
   margin: 0px;
   padding: 0px;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 
 h1 {
@@ -32,19 +32,19 @@ header {
   background-color: #eeeeee;
 }
 
-header img {
+.header-flex img {
   width: 350px;
   margin-left: 40px;
   padding-bottom: 0;
 }
 
-nav {
+.navbar {
   background-color: #eeeeee;
   margin-top: 70px;
   margin-right: 30px;
 }
 
-nav a {
+.navbar a {
   padding: 10px;
   font-size: 20px;
   color: black;
@@ -74,7 +74,7 @@ nav a:hover {
   background-position: center;
 }
 
-.opening {
+.container-background {
   background-color: black;
   opacity: 0.8;
   width: 400px;
@@ -84,10 +84,11 @@ nav a:hover {
   font-weight: bold;
 }
 
-.opening h2 {
+.container-background h1 {
   color: #f96666;
+  font-weight: normal;
 }
-.opening p {
+.container-background p {
   color: #f96666;
   font-size: 20px;
 }
@@ -98,19 +99,19 @@ nav a:hover {
   text-align: left;
 }
 
-.section-flex article {
+.article-text {
   padding: 20px;
   margin: 20px;
   box-shadow: 0 0.5rem 1rem rgb(0 50 100 / 0.25);
 }
 
 article h2 {
-  color: #B7343A;
+  color: #b7343a;
 }
 
 /* Footer osio alkaa */
 
-footer {
+.footer-flex {
   background-color: #eeeeee;
   color: black;
   padding: 50px;
@@ -120,19 +121,19 @@ footer {
   justify-content: space-between;
 }
 
-footer div {
+.footer-flex div {
   padding-top: 20px;
 }
 
-footer a {
+.footer-flex a {
   color: black;
 }
 
-footer h3 {
-  color: #B7343A;
+.footer-flex h3 {
+  color: #b7343a;
 }
 
-.button {
+.btn {
   margin-top: 35px;
   background-color: hsl(357, 56%, 46%);
   border: none;
@@ -146,7 +147,7 @@ footer h3 {
 
 /* Buttonien väri kun kursorin vie päälle*/
 .button:hover {
-  background-color: #B7143A;
+  background-color: #b7143a;
 }
 
 /* Gridit menua varten */
@@ -162,26 +163,88 @@ footer h3 {
 }
 
 .grid-container > div {
-
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   text-align: center;
   padding: 10px;
-  
 }
 
-.section-flexmenu {
+.grid-menu {
   padding: 20px;
   margin: 20px;
   text-align: center;
   justify-content: center;
 }
 
-.menu-header{
-  color: #B7343A;
+.menu-header {
+  color: #b7343a;
   text-align: center;
   font-weight: bold;
 }
 
+/* Yhtestieto sivu*/
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-container {
+  width: 30%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f96666;
+  margin-inline: 20px;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.sijainti-container {
+  text-align: center;
+  color: #f96666;
+}
+
+.map-container {
+  display: flex;
+  width: 33%;
+  box-sizing: border-box;
+  /* padding: 20px; */
+  /* flex: 1; */
+  margin-inline: 20px;
+  margin-right: 50px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 35px;
+  background-color: #f96666;
+  border: none;
+  color: #eeeeee;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
 
 /* Tapahtuu kun ruutu pienenee */
 
@@ -225,7 +288,7 @@ footer h3 {
     text-align: center;
     justify-content: center;
   }
-  
+
   .flex-container {
     flex-direction: column;
   }

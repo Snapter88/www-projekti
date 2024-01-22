@@ -7,34 +7,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizzeria</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles_remake.css" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="yhteyssivun.css
-    ">
   </head>
   <body>
-    <div class="header-flex">
-      <header>
+    <header class="header-flex">
+      <div>
         <a href="index.html"><img src="images/PIZZERIA.svg" alt=""></a>
-      </header>
+      </div>
     <nav class="navbar">
       <a href="index.html">Etusivu</a>
       <a href="menu.html">Menu</a>
       <a href="yhteystiedot.html">Yhteystiedot</a>
-    </nav>
-  </div>
+    </header>
+
     <section class="front-image">
-      <div class="opening">
-        <h2>Aukioloajat</h2>
+      <div class="image-width">
+      <div class="container-background">
+        <h1>Aukioloajat</h1>
         <p>Ma-To</p>
         <p>Pe-La</p>
         <p>Su</p>
       </div>
+    </div>
     </section>
 
    <!--kyselykaavake tähän-->
 
-    <section class="flex-container">
+    <section class="section-flex">
       <div class="form-container">
       <h3>Asiakaspalaute</h3>
       <form action="process-feedback.php" method="post">
@@ -44,13 +44,14 @@
         <input type="email" id="email" name="email" required>
         <label for="feedback">Palaute:</label>
         <textarea id="feedback" name="feedback" rows="5" required></textarea>
-        <button type="submit">Lähetä palaute</button>
+        <button class="btn btn__submit" type="submit">Lähetä palaute</button>
       </form>
       </div>
 
-      <div class="sijainti-container">
-        <h3>Tervetuloa Pizzeriaan <br>Kauppakeskus Goodmaniin Hämeenlinnaan!</h3>
-      </div>
+      <article class="article-info">
+        <h2>Tervetuloa Pizzeriaan</h2>
+        <p>Kauppakeskus Goodmaniin Hämeenlinnaan!</p>
+      </article>
 
       <div class="map-container">
         <img src="images/map.jpeg" alt="Ravintolan sijainti kartalla">
@@ -59,7 +60,7 @@
 
 
 
-    <footer>
+    <footer class="footer-flex">
       <div>
         <h3>Yhteystiedot</h3>
         <p>Ravintolan nimi</p>
@@ -77,7 +78,7 @@
         <p>Su</p>
       </div>
       <div>
-        <a href="#" class="button">Tilaa uutiskirje</a>
+        <button class="btn">Tilaa uutiskirje</button>
         <p>Jotain muuta tietoa</p>
         <a href="https://www.facebook.com/"><img src="images/facebook1.svg" alt="Facebook" /></a>
         <a href="https://www.instagram.com/"><img src="images/instagram1.svg" alt="Instagram" /></a>

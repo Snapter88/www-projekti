@@ -7,69 +7,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizzeria</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles_remake.css" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
   </head>
   <body>
-    <!-- TODO selvitä miten voi tehdä ilman diviä -->
-    <div class="header-flex">
-      <header>
-        <a href="index.html"><img src="images/PIZZERIA.svg" alt=""></a>
-      </header>
+    <header class="header-flex">
+      <div class="header-image">
+        <a href="index.html"><img src="images/PIZZERIA.svg" alt="" /></a>
+      </div>
       <nav class="navbar">
         <a href="index.html">Etusivu</a>
         <a href="menu.html">Menu</a>
         <a href="yhteystiedot.html">Yhteystiedot</a>
       </nav>
-    </div>
-
+    </header>
     <section class="front-image">
-      <div class="opening">
-        <h2>Aukioloajat</h2>
-        <p>Ma-To</p>
-        <p>Pe-La</p>
-        <p>Su</p>
+      <div class="image-width">
+        <div class="container-background">
+          <h1>Aukioloajat</h1>
+          <p>Ma-To</p>
+          <p>Pe-La</p>
+          <p>Su</p>
+        </div>
       </div>
     </section>
     <section class="section-flex">
-      <article>
+      <article class="article-text">
         <h2>Otsikko</h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
           dolorem recusandae veritatis, tempore vitae modi omnis. Dolorem vitae
           dolor facilis optio necessitatibus doloremque minima rerum fugit quae
-          iure, maiores quis cupiditate quasi commodi mollitia ex esse
-          quibusdam. Minima, fuga nostrum ullam quam, laborum sed possimus nobis
-          voluptatem, id consequatur odit.
+          iure, maiores quis cupiditate quasi commodi mollitia.
         </p>
       </article>
 
-      <article>
+      <article class="article-text">
         <h2>Otsikko2</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           Exercitationem natus voluptas quam cupiditate voluptatum repellendus
           commodi minima, debitis aliquid tempora, libero eaque perferendis
           eius. Nihil repudiandae eos in! Laborum ducimus facere quod expedita
-          voluptate ipsum fugit veritatis architecto ullam voluptatum! Fuga enim
-          hic dolore inventore possimus ipsa sed atque dignissimos.
+          voluptate ipsum fugit.
         </p>
       </article>
 
-      <article>
+      <article class="article-text">
         <h2>Otsikko3</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur,
           nostrum explicabo? Hic est, aliquam optio quam dolorem dignissimos
           eligendi nulla. Corrupti dolorem praesentium debitis architecto eos
           natus labore voluptatem eaque eligendi eius ipsam velit modi, sapiente
-          sit quaerat quisquam, fugiat saepe delectus impedit? Sed iusto maiores
-          ut iure error labore.
+          sit quaerat quisquam.
         </p>
       </article>
     </section>
 
-    <footer>
+    <footer class="footer-flex">
       <div>
         <h3>Yhteystiedot</h3>
         <p>Ravintolan nimi</p>
@@ -87,11 +83,17 @@
         <p>Su</p>
       </div>
       <div>
-        <a href="#" class="button">Tilaa uutiskirje</a>
+        <button class="btn">Tilaa uutiskirje</button>
         <p>Jotain muuta tietoa</p>
-        <a href="https://www.facebook.com/"><img src="images/facebook1.svg" alt="Facebook" /></a>
-        <a href="https://www.instagram.com/"><img src="images/instagram1.svg" alt="Instagram" /></a>
-        <a href="https://www.youtube.com/"><img src="images/youtube1.svg" alt="Youtube" /></a>
+        <a href="https://www.facebook.com/"
+          ><img src="images/facebook1.svg" alt="Facebook"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img src="images/instagram1.svg" alt="Instagram"
+        /></a>
+        <a href="https://www.youtube.com/"
+          ><img src="images/youtube1.svg" alt="Youtube"
+        /></a>
       </div>
     </footer>
   </body>

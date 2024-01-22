@@ -1,5 +1,3 @@
-/* Tässä yhteystietosivun lomakkeen ja kuvan css-muotoiluja */
-
 .flex-container{
     display: flex;
     justify-content: space-between;
