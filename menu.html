@@ -1,159 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <!--
+  <head>
+    <!--
       AMAZING PIZZERIA BY GROUP 22
     -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pizzeria</title>
-  <link rel="stylesheet" href="styles_remake.css"/>
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzeria</title>
+    <link rel="stylesheet" href="styles/styles_remake.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts/myScript.js"></script>
+  </head>
 
-</head>
-
-<body>
-
-  <!-- Navigaatiopalkki-->
-  <div class="header-flex">
-    <header>
-      <a href="index.html"><img src="images/PIZZERIA.svg" alt=""></a>
-    </header>
-
-    <!-- Linkit muille sivuille tänne (href="sivun-nimi.html") -->
-    <nav class="navbar">
-      <a href="index.html">Etusivu</a>
-      <a href="menu.html">Menu</a>
-      <a href="yhteystiedot.html">Yhteystiedot</a>
-    </nav>
-  </div>
-
-  <!-- Sivun kuva jossa aukioloajat -->
-  <section class="front-image">
-    <div class="image-width">
-      <div class="container-background">
-        <h1>Aukioloajat</h1>
-        <p>Ma-To</p>
-        <p>Pe-La</p>
-        <p>Su</p>
+  <body>
+    <div class="form-container news-container">
+      <form action="error.html" class="form-news">
+        <div class="wrap">
+        <h2>Tilaa uutiskirje</h2>
+        <span class="cancelbtn close" title="Close Modal">&times;</span>
+        </div>
+        <label for="email">Sähköposti:</label>
+        <input type="email" id="email" name="email" required>
+        <button class="btn btn__submit" type="submit">Tilaa</button>
+        <p><span class="cancelbtn">Peruuta</span> </p>
+      </form>
       </div>
+
+    <div class="header-flex">
+      <header>
+        <a href="index.html"><img src="images/PIZZERIA.svg" alt="" /></a>
+      </header>
+
+      <nav class="navbar">
+        <a href="index.html">Etusivu</a>
+        <a href="menu.html">Menu</a>
+        <a href="yhteystiedot.html">Yhteystiedot</a>
+      </nav>
     </div>
-    </section>
 
-  <!-- Sivun sisältö tämä section-flexin sisään-->
-  <section class="grid-menu">
-      <h2>Pizzat</h2>
-      <div class="grid-container">
-      <div><img src="images_png/menupizza1.png" alt="Kuva pizzasta" /></div>
-      <div><h3>PIZZAN NIMI</h3>
-      <p>Täytteet<BR>
-        Allergeenit<BR>
-        Medium: 10€ Perhe: 20€<BR>
-        <a href="#" class="btn">Lisää tilaukseen</a></p></div>
-      <div><img src="images_png/menupizza2.png" alt="Kuva pizzasta" /></div>  
-      <div><h3>PIZZAN NIMI</h3>
-        <p>Täytteet<BR>
-          Allergeenit<BR>
-          Medium: 10€ Perhe: 20€<BR>
-          <a href="#" class="btn">Lisää tilaukseen</a>
-        </p></div>
-      <div><img src="images_png/menupizza1.png" alt="Kuva pizzasta" /></div>
-      <div><h3>PIZZAN NIMI</h3>
-        <p>Täytteet<BR>
-          Allergeenit<BR>
-          Medium: 10€ Perhe: 20€<BR>
-          <a href="#" class="btn">Lisää tilaukseen</a></p></div>
-      <div><img src="images_png/menupizza2.png" alt="Kuva pizzasta" /></div>
-      <div><h3>PIZZAN NIMI</h3>
-        <p>Täytteet<BR>
-          Allergeenit<BR>
-          Medium: 10€ Perhe: 20€<BR>
-          <a href="#" class="btn">Lisää tilaukseen</a></p></div>  
-        <div><img src="images_png/menupizza1.png" alt="Kuva pizzasta" /></div>
-      <div>
-        <h3>PIZZAN NIMI</h3>
-      <p>Täytteet<BR>
-        Allergeenit<BR>
-        Medium: 10€ Perhe: 20€<BR></p>
-        <a href="#" class="btn">Lisää tilaukseen</a>
+    <section class="front-image">
+      <div class="image-width">
+        <div class="container-background">
+          <h1>Aukioloajat</h1>
+          <p>Ma-To</p>
+          <p>Pe-La</p>
+          <p>Su</p>
+        </div>
       </div>
-      <div><img src="images_png/menupizza2.png" alt="Kuva pizzasta" /></div>  
-      <div><h3>PIZZAN NIMI</h3>
-        <p>Täytteet<BR>
-          Allergeenit<BR>
-          Medium: 10€ Perhe: 20€<BR>
-          <a href="#" class="btn">Lisää tilaukseen</a>
-        </p></div>
-      </div>
-        
-      
-      <h2>Juomat</h2>
-      <div class="grid-container">
-        <div><img src="images_png/menusoda.png" alt="Kuva pepsistä" /></div>
-        <div><h3>VIRVOITUSJUOMA 0,5L </h3>
-        <p>3.90€<BR>
-          <BR>
-          <a href="#" class="btn">Lisää tilaukseen</a></p></div>
-        <div><img src="images_png/menusoda.png" alt="Kuva pepsistä" /></div>  
-        <div><h3>VIRVOITUSJUOMA 1,5L </h3>
-          <p>5.90€<BR>
-            <a href="#" class="btn">Lisää tilaukseen</a>
-          </p></div>
-          <div><img src="images_png/menusoda.png" alt="Kuva pepsistä" /></div>
-        <div><h3>VIRVOITUSJUOMA 0,5L </h3>
-        <p>3.90€<BR>
-          <BR>
-          <a href="#" class="btn">Lisää tilaukseen</a></p></div>
-        <div><img src="images_png/menusoda.png" alt="Kuva pepsistä" /></div>  
-        <div><h3>VIRVOITUSJUOMA 1,5L </h3>
-          <p>5.90€<BR>
-            <a href="#" class="btn">Lisää tilaukseen</a>
-          </p></div>
+
+    </section>
+  <div class="container-navi">
+    <ul class="pizza-navigointi">
+      <li><a href="#pizza">Pizzat</a></li>
+      <li><a href="#drinks">Juomat</a></li>
+      <li><a href="#softis">Jäätelöt</a></li>
+    </ul>
+  </div>
+    <section class="grid-menu">
+      <h2 class="pizza" id="pizza">Pizzat</h2>
+
+      <div class="grid-container pizza">
+
+        <div class="pizza">
+          <img src="images_png/menupizza1.png" alt="Kuva pizzasta" />
+          <h3>PIZZAN NIMI</h3>
+          <p>Täytteet, Allergeenit<br />
+            Medium: 10€ Perhe: 20€<br /></p>
+            <a href="errors/error.html" class="btn">Lisää tilaukseen</a>
+        </div>
+          
+        <div class="pizza">
+          <img src="images_png/menupizza2.png" alt="Kuva pizzasta"/>
+            <h3>PIZZAN NIMI</h3>
+            <p>Täytteet, Allergeenit<br />
+              Medium: 10€ Perhe: 20€<br /></p>
+            <a href="errors/error.html" class="btn">Lisää tilaukseen</a>
         </div>
 
-        <h2>Jäätelöt</h2>
-        <div class="grid-container">
-          <div><img src="images_png/menusoftserve.png" alt="Kuva jäätelöstä" /></div>
-          <div><h3>PIENI PEHMYT</h3>
-          <p>3.90€<BR>
-            <BR>
-            <a href="#" class="btn">Lisää tilaukseen</a></p></div>
-          <div><img src="images_png/menusoftserve.png" alt="Kuva jäätelöstä" /></div>  
-          <div><h3>ISO PEHMYT</h3>
-            <p>5.90€<BR>
-              <a href="#" class="btn">Lisää tilaukseen</a>
-            </p></div>
-  </section>
+        <div class="pizza">
+          <img src="images_png/menupizza1.png" alt="Kuva pizzasta"/>
+          <h3>PIZZAN NIMI</h3>
+          <p>Täytteet, Allergeenit<br />
+            Medium: 10€ Perhe: 20€<br /></p>
+           <a href="errors/error.html" class="btn">Lisää tilaukseen</a>
+        </div>
 
-  <!-- Alapalkin tiedot-->
-  <footer class="footer-flex">
-    <div>
-      <h3>Yhteystiedot</h3>
-      <p>Ravintolan nimi</p>
-      <p>Osoite</p>
-      <p>Toimipaikka</p>
-      <p><a href="#">Sähköposti@jotain.fi</a></p>
-      <p><a href="#">www.ravintola.fi</a></p>
-      <p>Puhelin <a href="#">+358 1 234 567</a></p>
-    </div>
-    <div>
-      <h3>Avoinna</h3>
-      <p>Aukioloajat</p>
-      <p>Ma - To</p>
-      <p>Pe - La</p>
-      <p>Su</p>
-    </div>
-    <div>
-      <button class="btn">Tilaa uutiskirje</button>
-      <p>Jotain muuta tietoa</p>
-      
-      <!-- Somelinkit tänne (href="osoite.com")-->
-      <a href="https://www.facebook.com/"><img src="images/facebook1.svg" alt="Facebook" /></a>
-      <a href="https://www.instagram.com/"><img src="images/instagram1.svg" alt="Instagram" /></a>
-      <a href="https://www.youtube.com/"><img src="images/youtube1.svg" alt="Youtube" /></a>
-    </div>
-  </footer>
+        <div class="pizza">
+          <img src="images_png/menupizza2.png" alt="Kuva pizzasta"/>
+          <h3>PIZZAN NIMI</h3>
+          <p>Täytteet, Allergeenit<br/>
+            Medium: 10€ Perhe: 20€<br/></p>
+           <a href="errors/error.html" class="btn">Lisää tilaukseen</a>
+        </div>
 
-</body>
+        <div class="pizza">
+          <img src="images_png/menupizza1.png" alt="Kuva pizzasta"/>
+          <h3>PIZZAN NIMI</h3>
+          <p>Täytteet, Allergeenit<br/>
+            Medium: 10€ Perhe: 20€<br/></p>
+            <a href="errors/error.html" class="btn">Lisää tilaukseen</a>
+          </p>
+        </div>
 
+        <div class="pizza">
+          <img src="images_png/menupizza2.png" alt="Kuva pizzasta"/>
+          <h3>PIZZAN NIMI</h3>
+          <p>Täytteet, Allergeenit<br/>
+            Medium: 10€ Perhe: 20€<br/></p>
+          <a href="errors/error.html" class="btn">Lisää tilaukseen</a>
+        </div>
+
+        <div class="pizza">
+          <img src="images_png/menupizza2.png" alt="Kuva pizzasta"/>
+          <h3>PIZZAN NIMI</h3>
+          <p>Täytteet, Allergeenit<br/>
+            Medium: 10€ Perhe: 20€<br/></p>
+           <a href="errors/error.html" class="btn">Lisää tilaukseen</a>
+        </div>
+
+        <div class="3">
+          <img src="images_png/menupizza1.png" alt="Kuva pizzasta"/>
+          <h3>PIZZAN NIMI</h3>
+          <p>Täytteet, Allergeenit<br/>
+            Medium: 10€ Perhe: 20€<br/></p>
+            <a href="errors/error.html" class="btn">Lisää tilaukseen</a>
+          </p>
+        </div>
+
+        <div class="3">
+          <img src="images_png/menupizza2.png" alt="Kuva pizzasta"/>
+          <h3>PIZZAN NIMI</h3>
+          <p>Täytteet, Allergeenit<br/>
+            Medium: 10€ Perhe: 20€<br/></p>
+          <a href="errors/error.html" class="btn">Lisää tilaukseen</a>
+        </div>
+
+      </div>
+        <h2 class="drink" id="drinks">Juomat</h2>
+
+        <div class="grid-container drink">
+
+        <div class="drink"">
+          <img src="images_png/menusoda.png" alt="Kuva pepsistä"/>
+            <h3>VIRVOITUSJUOMA 0,5L</h3>
+            <p>3.90€</p>
+            <a href="errors/error.html" class="btn">Lisää tilaukseen</a>
+        </div>
+
+        <div class="drink">
+          <img src="images_png/menusoda.png" alt="Kuva pepsistä"/>
+            <h3>VIRVOITUSJUOMA 1,5L</h3>
+            <p>3.90€</p>
+            <a href="errors/error.html" class="btn">Lisää tilaukseen</a>
+        </div>
+
+        <div class="drink">
+          <img src="images_png/menusoda.png" alt="Kuva pepsistä"/>
+            <h3>VIRVOITUSJUOMA 0,5L</h3>
+            <p>3.90€</p>
+            <a href="errors/error.html" class="btn">Lisää tilaukseen</a>
+        </div>
+
+        <div class="drink">
+          <img src="images_png/menusoda.png" alt="Kuva pepsistä"/>
+            <h3>VIRVOITUSJUOMA 1,5L</h3>
+            <p>3.90€</p>
+            <a href="errors/error.html" class="btn">Lisää tilaukseen</a>
+        </div>
+
+        <div class="drink">
+          <img src="images_png/menusoda.png" alt="Kuva pepsistä"/>
+            <h3>VIRVOITUSJUOMA 0,5L</h3>
+            <p>3.90€</p>
+            <a href="errors/error.html" class="btn">Lisää tilaukseen</a>
+        </div>
+
+        <div class="drink">
+          <img src="images_png/menusoda.png" alt="Kuva pepsistä"/>
+            <h3>VIRVOITUSJUOMA 1,5L</h3>
+            <p>3.90€</p>
+            <a href="errors/error.html" class="btn">Lisää tilaukseen</a>
+        </div>
+
+      </div>
+
+        <h2 class="softis" id="softis">Jäätelöt</h2>
+
+      <div class="grid-container softis">
+
+        <div class="softis">
+          <img src="images_png/menusoftserve.png" alt="Kuva jäätelöstä"/>
+          <h3>PIENI PEHMYT</h3>
+          <p>3.90€</p>
+          <a href="errors/error.html" class="btn">Lisää tilaukseen</a>
+        </div>
+
+        <div class="softis">
+          <img src="images_png/menusoftserve.png" alt="Kuva jäätelöstä"/>
+          <h3>KESKIKOKOINEN PEHMYT</h3>
+          <p>3.90€</p>
+          <a href="errors/error.html" class="btn">Lisää tilaukseen</a>
+        </div>
+
+        <div class="softis">
+          <img src="images_png/menusoftserve.png" alt="Kuva jäätelöstä"/>
+          <h3>ISO PEHMYT</h3>
+          <p>3.90€</p>
+          <a href="errors/error.html" class="btn">Lisää tilaukseen</a>
+        </div>
+
+    
+            
+
+      </div>
+    
+    </section>
+
+    <!-- Alapalkin tiedot-->
+    <footer class="footer-flex">
+      <div>
+        <h3>Yhteystiedot</h3>
+        <p>Ravintolan nimi</p>
+        <p>Osoite</p>
+        <p>Toimipaikka</p>
+        <p><a href=mailto:bestpizza@pizza.pizza>Sähköposti@jotain.fi</a></p>
+        <p><a href="#">www.ravintola.fi</a></p>
+        <p>Puhelin <a href="tel:+358 1 234 567">+358 1 234 567</a></p>
+      </div>
+      <div>
+        <h3>Avoinna</h3>
+        <p>Aukioloajat</p>
+        <p>Ma - To</p>
+        <p>Pe - La</p>
+        <p>Su</p>
+      </div>
+      <div>
+        <button class="btn btn-news">Tilaa uutiskirje</button>
+        <p><a href="ehdot/tietosuojaseloste.html">Tietosuojaseloste</a></p>
+        <a href="https://www.facebook.com/"
+          ><img src="images/facebook1.svg" alt="Facebook"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img src="images/instagram1.svg" alt="Instagram"
+        /></a>
+        <a href="https://www.youtube.com/"
+          ><img src="images/youtube1.svg" alt="Youtube"/></a>
+      </div>
+    </footer>
+  </body>
 </html>

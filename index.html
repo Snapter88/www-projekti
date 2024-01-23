@@ -7,10 +7,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizzeria</title>
-    <link rel="stylesheet" href="styles_remake.css" />
+    <link rel="stylesheet" href="styles/styles_remake.css" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts/myScript.js"></script>
   </head>
   <body>
+    <div class="form-container news-container">
+      <form action="errors/error.html" class="form-news">
+        <div class="wrap">
+        <h2>Tilaa uutiskirje</h2>
+        <span class="cancelbtn close" title="Close Modal">&times;</span>
+        </div>
+        <label for="email">Sähköposti:</label>
+        <input type="email" id="email" name="email" required>
+        <button class="btn btn__submit" type="submit">Tilaa</button>
+        <p><span class="cancelbtn">Peruuta</span> </p>
+      </form>
+      </div>
     <header class="header-flex">
       <div class="header-image">
         <a href="index.html"><img src="images/PIZZERIA.svg" alt="" /></a>
@@ -71,9 +85,9 @@
         <p>Ravintolan nimi</p>
         <p>Osoite</p>
         <p>Toimipaikka</p>
-        <p><a href="#">Sähköposti@jotain.fi</a></p>
+        <p><a href=mailto:bestpizza@pizza.pizza>Sähköposti@jotain.fi</a></p>
         <p><a href="#">www.ravintola.fi</a></p>
-        <p>Puhelin <a href="#">+358 1 234 567</a></p>
+        <p>Puhelin <a href="tel:+358 1 234 567">+358 1 234 567</a></p>
       </div>
       <div>
         <h3>Avoinna</h3>
@@ -83,8 +97,8 @@
         <p>Su</p>
       </div>
       <div>
-        <button class="btn">Tilaa uutiskirje</button>
-        <p>Jotain muuta tietoa</p>
+        <button class="btn btn-news">Tilaa uutiskirje</button>
+        <p><a href="ehdot/tietosuojaseloste.html">Tietosuojaseloste</a></p>
         <a href="https://www.facebook.com/"
           ><img src="images/facebook1.svg" alt="Facebook"
         /></a>
@@ -92,8 +106,7 @@
           ><img src="images/instagram1.svg" alt="Instagram"
         /></a>
         <a href="https://www.youtube.com/"
-          ><img src="images/youtube1.svg" alt="Youtube"
-        /></a>
+          ><img src="images/youtube1.svg" alt="Youtube"/></a>
       </div>
     </footer>
   </body>
