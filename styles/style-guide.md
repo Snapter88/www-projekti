@@ -13,4 +13,4 @@
 
 - Font size (paragraph): 16px
 
-- Family: [Verdana]
+- Family: 'Roboto', sans-serif
